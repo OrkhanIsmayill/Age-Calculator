@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  background-color: #F0F0F0;
+  height: 1000px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+
+}
+
+.calculatorBox {
+  height: 620px;
+  width: 750px;
+  background-color: white;
+  border-radius: 20px 20px 150px 20px;
+  padding: 30px;
+}
+
+.date {
+  height: 100px;
+  width: 500px;
+
+
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  input {
+    margin: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  input[type="number"] {
+    font-size: 20px;
+  }
+
+  label {
+    font-weight: 700;
+  }
+}
+
+::placeholder {
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+}
+
+.goDiv {
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: hsl(259, 100%, 65%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px; 
+  }
+
+  button:hover {
+    background-color: hsl(0, 0%, 8%);
+  }
+
+
+}
+
+.button:hover {
+  background-color: hsl(259, 65%, 37%);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space{
+  border: 1px dashed black;
+  width: 550px;
+}
+
+.errorMessage{
+  font-size: 12px;
+  font-style: italic;
+}
+
+.resultField{
+  div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p{
+      font-weight: bold;
+      font-style: italic;
+      font-size: 80px;
+      margin-right: 10px;
+      color: hsl(259, 100%, 65%);
+    }
+    h1{
+      font-style: italic;
+      font-size: 80px;
+      
+
+    }
+
+
+  }
+ 
+
+}
+
+
+
+@media screen and (max-width:620px){
+
+  .container{
+    padding-right: 50px;
+  }
+  .calculatorBox {
+    height: 620px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px 20px 150px 20px;
+    padding: 10px;
+    
+    
+  }
+  form {
+    display: flex;
+    justify-content:flex-start;
+   
+  
+    input {
+      margin: 5px;
+      padding: 10px;
+      height: 60px;
+      width: 100px;
+    
+    }
+  
+  }
+  .resultField{
+    padding: 10px;
+  }
+  .submit{
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width:375px){
+  .calculatorBox {
+    height: 500px;
+    width: 320px;
+    background-color: white;
+    border-radius: 20px 20px 150px 20px;
+    padding: 10px;
+    
+    
+  }
+  form {
+    display: flex;
+    justify-content:flex-start;
+   
+  
+    input {
+      margin: 5px;
+      padding: 10px;
+      height: 60px;
+      width: 70px;
+    
+    }
+  
+  }
+  .resultField{
+    div{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  
+      p{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+        margin-right: 10px;
+        color: hsl(259, 100%, 65%);
+      }
+      h1{
+        font-style: italic;
+        font-size: 50px;
+        
+  
+      }
+  
+  
+    }
+    
+   
+  
+  }
+
+  .space{
+    position: absolute;
+    width: 280px;
+    
+  }
+  .goDiv{
+    position: relative;
+    z-index: 1;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    justify-content:flex-start;
+   
+  
+    input {
+      margin: 5px;
+      padding: 10px;
+      height: 45px;
+      width: 75px;
+    
+    }
+  
+  }
+  ::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+  }
+
+}
+
+
+
+
